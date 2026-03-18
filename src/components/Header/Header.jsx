@@ -9,13 +9,14 @@ const Header = () => {
         <NavLink to='/'>Home</NavLink>
       </li>
       <li>
-        <a>Item 3</a>
+        <NavLink to='/apps'>Apps</NavLink>
       </li>
     </>
   );
   return (
-    <nav className="navbar bg-base-100 shadow-sm">
-      <div className="navbar-start">
+    <nav className=" bg-base-100">
+      <div className="navbar w-11/12 lg:w-10/12 mx-auto">
+        <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -50,6 +51,7 @@ const Header = () => {
       </div>
       <div className="navbar-end">
         <Link to='https://github.com/ahmadraiyano' target="_blank" className="btn bg-linear-to-tl from-[#9F62F2] to-[#632EE3] rounded-lg text-white"><FaGithub className="text-2xl"/>Contribute</Link>
+      </div>
       </div>
     </nav>
   );

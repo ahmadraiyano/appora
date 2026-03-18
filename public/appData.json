@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://i.ibb.co.com/VY9D7gmX/demo-app-6.webp",
+    "title": "ChatFlow",
+    "companyName": "NovaTech",
+    "id": 1,
+    "description": "A fast messaging app with secure cloud sync and media sharing.",
+    "size": 45,
+    "reviews": 15420,
+    "ratingAvg": 4.5,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 320 },
+      { "name": "2 star", "count": 540 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 5600 },
+      { "name": "5 star", "count": 7760 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Y7H65PN0/presentation-22.png",
+    "title": "TaskPro",
+    "companyName": "Productive Labs",
+    "id": 2,
+    "description": "Organize your daily tasks with reminders and productivity insights.",
+    "size": 32,
+    "reviews": 8200,
+    "ratingAvg": 4.3,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 3400 },
+      { "name": "5 star", "count": 3290 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/ffBwXmJ/presentation.png",
+    "title": "FitPulse",
+    "companyName": "HealthCore",
+    "id": 3,
+    "description": "Track workouts, calories, and progress with personalized plans.",
+    "size": 58,
+    "reviews": 11230,
+    "ratingAvg": 4.6,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 310 },
+      { "name": "3 star", "count": 890 },
+      { "name": "4 star", "count": 4300 },
+      { "name": "5 star", "count": 5550 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/qz9qQnF/replay.png",
+    "title": "Learnly",
+    "companyName": "EduSpark",
+    "id": 4,
+    "description": "Interactive courses and quizzes for fast skill development.",
+    "size": 67,
+    "reviews": 9800,
+    "ratingAvg": 4.4,
+    "downloads": 700000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 390 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 3900 },
+      { "name": "5 star", "count": 4260 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/1CM8pNQ/try-demo.png",
+    "title": "SnapEdit",
+    "companyName": "PixelForge",
+    "id": 5,
+    "description": "AI-powered photo editor with filters and background removal.",
+    "size": 74,
+    "reviews": 20100,
+    "ratingAvg": 4.7,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 7200 },
+      { "name": "5 star", "count": 10500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/BH5CY7dL/video-editing.png",
+    "title": "TravelMate",
+    "companyName": "WanderSoft",
+    "id": 6,
+    "description": "Plan trips, explore destinations, and book hotels easily.",
+    "size": 61,
+    "reviews": 7400,
+    "ratingAvg": 4.2,
+    "downloads": 620000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2900 },
+      { "name": "5 star", "count": 2850 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/rGKV2rLh/demo-1.png",
+    "title": "NoteFlow",
+    "companyName": "WriteLabs",
+    "id": 7,
+    "description": "Simple and elegant note-taking app with cloud backup.",
+    "size": 24,
+    "reviews": 5600,
+    "ratingAvg": 4.4,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 260 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 2420 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Jjc2wbJ1/demo-2.png",
+    "title": "BudgetWise",
+    "companyName": "FinTech Labs",
+    "id": 8,
+    "description": "Manage expenses and budgets with smart financial insights.",
+    "size": 36,
+    "reviews": 6100,
+    "ratingAvg": 4.3,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 310 },
+      { "name": "3 star", "count": 760 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 2480 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/cKvyhm6V/demo-3.png",
+    "title": "LangMate",
+    "companyName": "Polyglot Tech",
+    "id": 9,
+    "description": "Learn new languages with AI conversation practice.",
+    "size": 49,
+    "reviews": 8800,
+    "ratingAvg": 4.5,
+    "downloads": 730000,
+    "ratings": [
+      { "name": "1 star", "count": 170 },
+      { "name": "2 star", "count": 290 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 3400 },
+      { "name": "5 star", "count": 4040 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/5WSYW2yh/demo-22.png",
+    "title": "Weatherly",
+    "companyName": "SkyNet Apps",
+    "id": 10,
+    "description": "Real-time weather forecasts with beautiful visuals.",
+    "size": 28,
+    "reviews": 4200,
+    "ratingAvg": 4.2,
+    "downloads": 350000,
+    "ratings": [
+      { "name": "1 star", "count": 140 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 620 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 1640 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/cpG7Ghs/demo.png",
+    "title": "StreamBox",
+    "companyName": "MediaHub",
+    "id": 11,
+    "description": "Watch movies and shows with high-quality streaming.",
+    "size": 85,
+    "reviews": 14200,
+    "ratingAvg": 4.4,
+    "downloads": 1100000,
+    "ratings": [
+      { "name": "1 star", "count": 350 },
+      { "name": "2 star", "count": 480 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 5200 },
+      { "name": "5 star", "count": 6970 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/GfJNLBmS/demo-5110617.png",
+    "title": "GamersHub",
+    "companyName": "Playverse",
+    "id": 12,
+    "description": "Community for gamers with live chat and tournaments.",
+    "size": 70,
+    "reviews": 9300,
+    "ratingAvg": 4.3,
+    "downloads": 780000,
+    "ratings": [
+      { "name": "1 star", "count": 240 },
+      { "name": "2 star", "count": 390 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 3600 },
+      { "name": "5 star", "count": 4070 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/PycJb36/demo-5828237.png",
+    "title": "ShopGo",
+    "companyName": "RetailX",
+    "id": 13,
+    "description": "Discover deals and shop online with secure checkout.",
+    "size": 52,
+    "reviews": 15000,
+    "ratingAvg": 4.1,
+    "downloads": 1400000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 5600 },
+      { "name": "5 star", "count": 6000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/PzNpKNtQ/demo-17243463.png",
+    "title": "MedRemind",
+    "companyName": "CareTech",
+    "id": 14,
+    "description": "Medication reminders and health tracking features.",
+    "size": 33,
+    "reviews": 3700,
+    "ratingAvg": 4.5,
+    "downloads": 260000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 350 },
+      { "name": "4 star", "count": 1400 },
+      { "name": "5 star", "count": 1760 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/tMs5cpL2/demo-18546038.png",
+    "title": "Podcastly",
+    "companyName": "AudioWave",
+    "id": 15,
+    "description": "Stream and download podcasts from thousands of creators.",
+    "size": 40,
+    "reviews": 5200,
+    "ratingAvg": 4.4,
+    "downloads": 430000,
+    "ratings": [
+      { "name": "1 star", "count": 110 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 640 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 2150 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/4nzWpkmy/demo-app-1.webp",
+    "title": "ScanPro",
+    "companyName": "DocuSoft",
+    "id": 16,
+    "description": "Turn your phone into a powerful document scanner.",
+    "size": 26,
+    "reviews": 6100,
+    "ratingAvg": 4.6,
+    "downloads": 520000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 160 },
+      { "name": "3 star", "count": 520 },
+      { "name": "4 star", "count": 2300 },
+      { "name": "5 star", "count": 3030 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/fVtPLT3V/demo-app-2.webp",
+    "title": "RecipeBook",
+    "companyName": "KitchenLabs",
+    "id": 17,
+    "description": "Explore recipes and cook delicious meals step by step.",
+    "size": 44,
+    "reviews": 4700,
+    "ratingAvg": 4.3,
+    "downloads": 360000,
+    "ratings": [
+      { "name": "1 star", "count": 130 },
+      { "name": "2 star", "count": 210 },
+      { "name": "3 star", "count": 590 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 1970 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/PZ85XdXL/demo-app-3.webp",
+    "title": "MindCalm",
+    "companyName": "ZenSoft",
+    "id": 18,
+    "description": "Meditation and sleep sounds to improve mental wellness.",
+    "size": 55,
+    "reviews": 8200,
+    "ratingAvg": 4.7,
+    "downloads": 640000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 210 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 3100 },
+      { "name": "5 star", "count": 4070 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/M5J530jR/demo-app-4.webp",
+    "title": "CodeMaster",
+    "companyName": "DevLabs",
+    "id": 19,
+    "description": "Learn programming with interactive coding challenges.",
+    "size": 62,
+    "reviews": 9100,
+    "ratingAvg": 4.6,
+    "downloads": 710000,
+    "ratings": [
+      { "name": "1 star", "count": 140 },
+      { "name": "2 star", "count": 260 },
+      { "name": "3 star", "count": 840 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 4360 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/FLD6090z/demo-app-5.webp",
+    "title": "MapWay",
+    "companyName": "GeoSoft",
+    "id": 20,
+    "description": "Navigation app with offline maps and route optimization.",
+    "size": 73,
+    "reviews": 12500,
+    "ratingAvg": 4.4,
+    "downloads": 980000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 4700 },
+      { "name": "5 star", "count": 5850 }
+    ]
+  }
+]
