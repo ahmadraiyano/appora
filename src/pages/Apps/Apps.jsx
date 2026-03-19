@@ -17,7 +17,10 @@ const Apps = () => {
     e.preventDefault();
     setSearch(e.target.value);
   };
-
+  const NotFoundMsg = {
+    heading: "OPPS!! APP NOT FOUND",
+    para: "The App you are requesting is not found on our system.  please try another apps"
+  }
   return (
     <div className="bg-base-200 py-10">
       <div className="w-11/12 lg:w-10/12 mx-auto text-center">
@@ -43,7 +46,7 @@ const Apps = () => {
           {filteredData.map((app) => (
             <App key={app.id} app={app}></App>
           ))}
-        </div> : <AppsNotFound></AppsNotFound>}
+        </div> : <AppsNotFound NotFoundMsg={NotFoundMsg}></AppsNotFound>}
       </div>
     </div>
   );

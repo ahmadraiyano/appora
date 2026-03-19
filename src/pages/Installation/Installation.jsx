@@ -3,13 +3,15 @@ import { getStoredData } from "../../utilities/storageDB";
 import { useLoaderData } from "react-router";
 import InstalledApp from "../../components/InstalledApp/InstalledApp";
 import { removeFromDB } from "../../utilities/storageDB";
+import AppsNotFound from "../../components/AppsNotFound/AppsNotFound";
+import Swal from "sweetalert2";
 
 const Installation = () => {
   const storedApp = getStoredData();
   const appsData = useLoaderData();
 
   const filteredStoredData = appsData.filter((appData) =>
-    storedApp.includes(appData.id)
+    storedApp.includes(appData.id),
   );
 
   const [sortedApps, setSortedApps] = useState([]);
@@ -31,12 +33,24 @@ const Installation = () => {
 
     setSortedApps(sorted);
   };
-  const handleUninstall = id => {
-        removeFromDB(id)
+  const handleUninstall = (id) => {
+    removeFromDB(id);
 
-        const newData = sortedApps.filter(app=> app.id !== id)
-        setSortedApps(newData)
-      }
+    const newData = sortedApps.filter((app) => app.id !== id);
+    setSortedApps(newData);
+
+    Swal.fire({
+  title: 'Uninstalled',
+  text: 'Do you want to continue',
+  icon: 'info',
+  confirmButtonText: 'OK'
+})
+  };
+
+  const NotFoundMsg = {
+    heading: "OPPS!! INSTALLED APP NOT FOUND",
+    para: "No installed app found.  please install some apps",
+  };
 
   return (
     <div className="bg-base-200 py-10">
@@ -58,23 +72,27 @@ const Installation = () => {
               className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
             >
               <li>
-                <a onClick={() => handleSort("highToLow")}>
-                  High to Low
-                </a>
+                <a onClick={() => handleSort("highToLow")}>High to Low</a>
               </li>
               <li>
-                <a onClick={() => handleSort("lowToHigh")}>
-                  Low to High
-                </a>
+                <a onClick={() => handleSort("lowToHigh")}>Low to High</a>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="grid gap-6">
-          {sortedApps.map((app) => (
-            <InstalledApp key={app.id} app={app} handleUninstall={handleUninstall}/>
-          ))}
+          {sortedApps.length > 0 ? (
+            sortedApps.map((app) => (
+              <InstalledApp
+                key={app.id}
+                app={app}
+                handleUninstall={handleUninstall}
+              />
+            ))
+          ) : (
+            <AppsNotFound NotFoundMsg={NotFoundMsg}></AppsNotFound>
+          )}
         </div>
       </div>
     </div>

@@ -2,17 +2,18 @@ import React, { useEffect, useState } from "react";
 import { FaDownload, FaStar } from "react-icons/fa";
 import { MdOutlineRateReview } from "react-icons/md";
 import { addToDB, getStoredData } from "../../utilities/storageDB";
+import Swal from "sweetalert2";
 
 const DetailsTop = ({ appDetail }) => {
-  const { id,image, title, ratingAvg, downloads, companyName, reviews, size } =
+  const { id, image, title, ratingAvg, downloads, companyName, reviews, size } =
     appDetail;
 
-    const [installed, setInstalled] = useState(false)
+  const [installed, setInstalled] = useState(false);
 
-    useEffect(()=>{
-      const stored = getStoredData()
-      setInstalled(stored.includes(id))
-    },[id])
+  useEffect(() => {
+    const stored = getStoredData();
+    setInstalled(stored.includes(id));
+  }, [id]);
 
   const formatted = (calc) => {
     return calc >= 1000000
@@ -24,10 +25,15 @@ const DetailsTop = ({ appDetail }) => {
   const formattedReviews = formatted(reviews);
 
   const handleInstalled = () => {
-    setInstalled(true)
-    addToDB(id)
-  }
-
+    setInstalled(true);
+    addToDB(id);
+    Swal.fire({
+      title: "Installation Successful",
+      text: "Do you want to continue",
+      icon: "success",
+      confirmButtonText: "Cool",
+    });
+  };
 
   return (
     <div className="py-10">
@@ -67,8 +73,12 @@ const DetailsTop = ({ appDetail }) => {
               <p className="font-bold text-2xl">{formattedReviews}</p>
             </div>
           </div>
-          <button onClick={handleInstalled} className={`btn btn-success sm:self-start`} disabled={installed}>
-            {installed? "installed" : `Install Now (${size} MB)`}
+          <button
+            onClick={handleInstalled}
+            className={`btn btn-success sm:self-start`}
+            disabled={installed}
+          >
+            {installed ? "installed" : `Install Now (${size} MB)`}
           </button>
         </div>
       </div>
