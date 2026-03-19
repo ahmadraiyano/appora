@@ -1,8 +1,10 @@
 import React from "react";
 import { FaDownload, FaStar } from "react-icons/fa";
+import { Link} from "react-router";
 
 const App = ({ app }) => {
-  const { image, ratingAvg, title, downloads } = app;
+  const { image, ratingAvg, title, downloads,id } = app;
+
 
  
     const formattedDownloads =
@@ -10,7 +12,8 @@ const App = ({ app }) => {
       ? (downloads / 1000000).toFixed(1) + "M"
       : (downloads / 1000).toFixed(1) + "K";
   return (
-    <div className="card bg-base-100 shadow-sm">
+    <Link to={`/apps/details/${id}`}>
+      <div className="card bg-base-100 shadow-sm">
       <figure className="p-4">
         <img className="bg-base-200 w-full" src={image} alt={title} />
       </figure>
@@ -28,6 +31,7 @@ const App = ({ app }) => {
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 

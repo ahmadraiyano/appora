@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useLoaderData } from "react-router";
 import App from "../../pages/App/App";
 import { IoSearchOutline } from "react-icons/io5";
+import AppsNotFound from "../../components/AppsNotFound/AppsNotFound";
 
 const Apps = () => {
   const appsData = useLoaderData();
@@ -42,7 +43,7 @@ const Apps = () => {
           {filteredData.map((app) => (
             <App key={app.id} app={app}></App>
           ))}
-        </div> : <p>error</p>}
+        </div> : <AppsNotFound></AppsNotFound>}
       </div>
     </div>
   );

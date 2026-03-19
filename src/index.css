@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Leckerli+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Leckerli+One&display=swap");
 @import "tailwindcss";
 @plugin "daisyui";
 
@@ -7,4 +7,10 @@ body {
 }
 .logo {
   font-family: "Leckerli One", cursive;
+}
+.active {
+  text-decoration: underline;
+  background: linear-gradient(to right, #632ee3, #9f62f2);
+  background-clip: text;
+  color: transparent;
 }
