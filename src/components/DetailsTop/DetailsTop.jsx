@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaDownload, FaStar } from "react-icons/fa";
 import { MdOutlineRateReview } from "react-icons/md";
+import { addToDB, getStoredData } from "../../utilities/storageDB";
 
 const DetailsTop = ({ appDetail }) => {
-  const { image, title, ratingAvg, downloads, companyName, reviews, size } =
+  const { id,image, title, ratingAvg, downloads, companyName, reviews, size } =
     appDetail;
+
+    const [installed, setInstalled] = useState(false)
+
+    useEffect(()=>{
+      const stored = getStoredData()
+      setInstalled(stored.includes(id))
+    },[id])
+
   const formatted = (calc) => {
     return calc >= 1000000
       ? (calc / 1000000).toFixed(1) + "M"
@@ -13,6 +22,13 @@ const DetailsTop = ({ appDetail }) => {
 
   const formattedDownloads = formatted(downloads);
   const formattedReviews = formatted(reviews);
+
+  const handleInstalled = () => {
+    setInstalled(true)
+    addToDB(id)
+  }
+
+
   return (
     <div className="py-10">
       <div className="flex flex-col md:flex-row gap-12">
@@ -51,8 +67,8 @@ const DetailsTop = ({ appDetail }) => {
               <p className="font-bold text-2xl">{formattedReviews}</p>
             </div>
           </div>
-          <button className="btn btn-success sm:self-start">
-            Install Now ({size} MB)
+          <button onClick={handleInstalled} className={`btn btn-success sm:self-start`} disabled={installed}>
+            {installed? "installed" : `Install Now (${size} MB)`}
           </button>
         </div>
       </div>

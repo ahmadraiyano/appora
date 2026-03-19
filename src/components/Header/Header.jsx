@@ -11,6 +11,9 @@ const Header = () => {
       <li>
         <NavLink to='/apps'>Apps</NavLink>
       </li>
+      <li>
+        <NavLink to='/installation'>Installation</NavLink>
+      </li>
     </>
   );
   return (
