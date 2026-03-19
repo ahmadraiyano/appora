@@ -1,13 +1,15 @@
 import React from "react";
 import { FaDownload, FaStar } from "react-icons/fa";
 
-const InstalledApp = ({ app }) => {
-  const { image, ratingAvg, title, downloads } = app;
+const InstalledApp = ({ app,handleUninstall}) => {
+  const { image, ratingAvg, title, downloads,id } = app;
 
   const formattedDownloads =
     downloads >= 1000000
       ? (downloads / 1000000).toFixed(1) + "M"
       : (downloads / 1000).toFixed(1) + "K";
+
+      
   return (
     <div className="bg-white">
       <div className="flex flex-col md:flex-row items-center p-4">
@@ -27,7 +29,7 @@ const InstalledApp = ({ app }) => {
             </div>
           </div>
           <div>
-            <button className="btn mt-4 md:mt-0">Uninstall</button>
+            <button onClick={()=>handleUninstall(id)} className="btn mt-4 md:mt-0">Uninstall</button>
           </div>
         </div>
       </div>

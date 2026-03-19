@@ -19,5 +19,12 @@ const addToDB = (id) => {
     localStorage.setItem("app", stringy);
   }
 };
+const removeFromDB = (id) => {
+  const storedData = getStoredData();
 
-export {addToDB, getStoredData}
+  const updatedData = storedData.filter(item => item !== id);
+
+  localStorage.setItem("app", JSON.stringify(updatedData));
+};
+
+export {addToDB, getStoredData,removeFromDB}
