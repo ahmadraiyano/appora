@@ -1,12 +1,32 @@
-# React + Vite
+# Appora
+ 
+A modern web application built to deliver a smooth and engaging user experience. This project demonstrates responsive design, clean UI, and scalable frontend architecture.
+ 
+🔗 **Live Demo:** [https://heartfelt-marigold-927abf.netlify.app/](https://heartfelt-marigold-927abf.netlify.app/)
+ 
+---
+ 
+## Tech Stack
+ 
+- **React 19** — UI library
+- **Vite 7** — Build tool and dev server with HMR
+- **Tailwind CSS 4** — Utility-first CSS framework
+- **DaisyUI 5** — Tailwind-based component library
+- **React Router 7** — Client-side routing
+- **Recharts** — Charting and data visualization
+- **React Icons** — Icon library
+- **SweetAlert2** — Beautiful alert and modal dialogs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+appora/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   └── styles/
+├── package.json
+└── README.md
