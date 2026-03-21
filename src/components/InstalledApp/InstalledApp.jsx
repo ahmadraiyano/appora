@@ -16,7 +16,7 @@ const InstalledApp = ({ app,handleUninstall}) => {
         <img src={image} className="max-w-52 rounded-lg shadow-2xl" />
         <div className="flex flex-col md:flex-row justify-center md:justify-between w-full items-center md:px-16">
           <div className="flex flex-col gap-8">
-            <h1 className="text-5xl font-bold mt-4 md:mt-0">{title}</h1>
+            <h1 className="text-5xl font-bold mt-4 md:mt-0 text-gray-600">{title}</h1>
             <div className="flex justify-evenly gap-8">
               <div className="badge badge-outline badge-success border-0 bg-green-100">
                 <FaDownload />
